@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-inter w-full;
+  }
+
+  *, ::before, ::after {
+    box-sizing: none;
+  }
+
+}
+
+/* .header {
+  min-width: 400px !important;
+} */
+
+.timeline::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  /* background: transparent; Optional: just make scrollbar invisible */
+}
+/*Optional: show position indicator in red */
+.timeline::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+.fill-green-update {
+  fill: #166534;
+}
+
+.ant-timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* .ant-timeline-item-tail {
+  display: none !important;
+} */
+
+.ant-timeline.ant-timeline-reverse
+  .ant-timeline-item-last
+  .ant-timeline-item-tail {
+  display: block;
+}
+
+.ant-timeline .ant-timeline-item-tail {
+  position: absolute;
+  top: 25px !important;
+  left: 4px;
+  height: calc(100% - 10px);
+  border-left: 2px solid #fff;
+}
+
+/* .ant-timeline-item-tail {
+  border-left: 1px solid #ffff;
+} */
+.ant-timeline-item-tail {
+  display: none;
+}
+
+.ant-timeline-item-head-custom {
+  position: absolute;
+  top: 5.5px;
+  left: 5px;
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  padding: 3px 1px;
+  line-height: 1;
+  text-align: center;
+  border: 0;
+  border-radius: 0;
+  transform: translate(-50%, -50%);
+  background: #1c5894 !important;
+  z-index: 1;
+}
+.ant-timeline-item-head-blue {
+  color: #fff !important;
+}
+
+div ul.ant-timeline > li:last-child > div:first-child {
+  border: 0 !important;
+}
+
+.ant-timeline-item:last-child {
+  padding-bottom: 0 !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.vertical-timeline.vertical-timeline-custom-line::before {
+  background: #424242;
+}
+
+.main-container {
+  display: grid;
+  min-height: 100vh;
+  min-height: 100dvh;
+  
+  
+}
+
+/* .hero{
+
+} */
+
+.progress-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.first-item .ant-timeline-item-tail{
+  display: none !important;
+}
+
+.cdl-bg-blue{
+  background-color: #3d74b2;
+}
+
+.cdl-bg-red{
+  background-color: #fb3e3e;
+}
+
+.cdl-text-red{
+  color: #fb3e3e;
+}
+
+.ant-timeline-item{
+  font-size: 13px !important;
+}
