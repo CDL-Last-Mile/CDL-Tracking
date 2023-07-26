@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const node_env = process.env.STATE
-const prodPath = node_env === 'production'? '/ordertrackerbeta' : node_env === 'staging' ? '/Xcelerator/OrderTracker': '';
+const prodPath = node_env === 'production'? '/ordertracker' : node_env === 'staging' ? '/Xcelerator/OrderTracker': '';
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",

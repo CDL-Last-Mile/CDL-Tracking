@@ -3,7 +3,7 @@
 
 const isProd = process.env.NODE_ENV === "production"
 const node_env = process.env.STATE
-const prodPath = node_env === 'production'? '/ordertrackerbeta' : node_env === 'staging' ? '/Xcelerator/OrderTracker': '';
+const prodPath = node_env === 'production'? '/ordertracker' : node_env === 'staging' ? '/Xcelerator/OrderTracker': '';
 const nextConfig = {
   reactStrictMode: true,
   basePath: prodPath,
