@@ -9,7 +9,7 @@ const nextConfig = {
   basePath: prodPath,
   env: {
     iisPath: prodPath,
-    REACT_APP_GOOGLE_MAPS_API_KEY:'AIzaSyBFbOeEx0KCTfOZP9z6Hw_jLyesmN3yl4E', 
+    REACT_APP_GOOGLE_MAPS_API_KEY:'AIzaSyDo2txH2yeTUqXP07I7YL1KuzfAk3eDMj8', 
     baseURL: (isProd && node_env) === 'production' ? "apps.cdldelivers.com/trackingpage/api" : (isProd && node_env) === "staging" ? "test.cdldelivers.com/Xcelerator/CDLTracker/api" : "localhost/Xcelerator/CDLTracker/api" 
   },
 }
